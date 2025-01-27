@@ -1,4 +1,4 @@
-import TelegramBot, { TelegramApi } from '@codebam/cf-workers-telegram-bot'
+import { Bot } from 'grammy'
 import {
   GenerationConfig,
   GoogleGenerativeAI,
@@ -309,7 +309,7 @@ export default {
     console.debug('cron processed')
   },
   fetch: async (request: Request, env: Env, ctx: ExecutionContext) => {
-    await new TelegramBot(env.SECRET_TELEGRAM_API_TOKEN)
+    await new Bot(env.SECRET_TELEGRAM_API_TOKEN)
       .on('status', async (ctx) => {
         const res = (await ctx.reply('我家还蛮大的'))!
         if (!res.ok) {
