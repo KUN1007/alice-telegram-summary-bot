@@ -1,5 +1,5 @@
 {
-  "name": "telegram-summary-bot",
+  "name": "alice-telegram-summary-bot",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -10,16 +10,16 @@
     "cf-typegen": "wrangler types"
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.5.2",
-    "@cloudflare/workers-types": "^4.20241112.0",
-    "typescript": "^5.5.2",
-    "vitest": "2.0.5",
-    "wrangler": "^3.60.3"
+    "@cloudflare/vitest-pool-workers": "^0.6.7",
+    "@cloudflare/workers-types": "^4.20250124.3",
+    "typescript": "^5.7.3",
+    "vitest": "3.0.4",
+    "wrangler": "^3.105.1"
   },
   "dependencies": {
-    "@codebam/cf-workers-telegram-bot": "^7.27.0",
+    "@codebam/cf-workers-telegram-bot": "^8.1.1",
     "@google/generative-ai": "^0.21.0",
-    "openai": "^4.75.0",
+    "openai": "^4.80.1",
     "telegramify-markdown": "^1.2.2"
   },
   "overrides": {
